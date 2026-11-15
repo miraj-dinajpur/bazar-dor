@@ -118,13 +118,6 @@ export default function Navbar() {
                       </Link>
                     </Dropdown.Item>
 
-                    <Dropdown.Item id="update-profile">
-                      <Link href="/profile/update-profile" className="w-full">
-                        প্রোফাইল আপডেট
-                      </Link>
-                    </Dropdown.Item>
-
-                    
                     
                     <Dropdown.Item id="signout">
                       <button onClick={handleSignOut}>
