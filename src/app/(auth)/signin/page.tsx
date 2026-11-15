@@ -1,8 +1,10 @@
 'use client';
+import { signIn } from '@/lib/auth-client';
 import { Button, Card, FieldError, Form, Input, Label, Separator, TextField } from '@heroui/react';
 import { Eye,EyeOff } from 'lucide-react';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import toast from 'react-hot-toast';
 
 const SignInPage = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -13,10 +15,24 @@ const SignInPage = () => {
       const formData = new FormData(e.currentTarget);
       const data = Object.fromEntries(formData.entries());
 
-      console.log(data);
+    //   console.log(data);
 
       // Later: Better Auth signIn.email()
+      const { data:resData, error } = await signIn.email({
+        email: data.email as string, // required, The email address of the user.
+        password: data.password as string, // required, The password of the user. It should be at least 8 characters long and max 128 by default.
+        callbackURL: "/", // An optional URL to redirect to after the user signs in. (optional)
+      });
+      if (error) {
+        toast.error(error.message as string);
+      }
     };
+    const handleGoogleSighIn = async () => {
+        const data = await signIn.social({
+          provider: "google",
+        });
+        console.log("Sign In Response:", data);
+      };
 
     return (
       <div className="min-h-screen w-full flex flex-col items-center justify-center bg-[#F0F5F0] px-4 py-10">
@@ -105,6 +121,7 @@ const SignInPage = () => {
             {/* Google Login */}
             <Button
               type="button"
+              onClick={handleGoogleSighIn}
               variant="outline"
               className="w-full h-12 flex items-center justify-center gap-2 rounded-xl border border-[#DFE7DF] bg-transparent hover:bg-[#F1F5F1] text-[#253129] font-semibold text-sm shadow-none"
             >
