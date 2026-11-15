@@ -53,7 +53,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-[#FBFDFB] border-b border-[#E5EBE5]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* Top Navbar */}
         <div className="flex items-center justify-between py-3.5">
           {/* Logo and Date */}
