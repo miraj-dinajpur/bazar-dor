@@ -13,10 +13,13 @@ import { Eye, EyeOff } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-import { signUp } from "@/lib/auth-client";
+import { signIn, signUp } from "@/lib/auth-client";
+import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 const SignUpPage = () => {
   const [isVisible, setIsVisible] = React.useState(false);
+  const router = useRouter();
 
   const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,9 +35,19 @@ const SignUpPage = () => {
       password: data.password as string, // user password -> min 8 characters by default
       name: data.name as string, // user display name
     });
-    console.log("Sign Up Response:", resData, error);
-  };
+    // console.log("Sign Up Response:", resData, error);
+    if(resData?.user.name) {
+        toast.success("সাইন আপ সফল হয়েছে! অনুগ্রহ করে আপনার ইমেইল যাচাই করুন।");
+        router.push("/signin");
+    }
 
+  };
+  const handleGoogleSighIn = async () => {
+    const data = await signIn.social({
+      provider: "google",
+    });
+    console.log("Sign In Response:", data);
+  };
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center bg-[#F0F5F0] px-4 py-10">
       {/* Page Heading */}
@@ -152,6 +165,7 @@ const SignUpPage = () => {
 
           {/* Google Login */}
           <Button
+            onClick={handleGoogleSighIn}
             type="button"
             variant="outline"
             className="w-full h-12 flex items-center justify-center gap-2 rounded-xl border border-[#DFE7DF] bg-transparent hover:bg-[#F1F5F1] text-[#253129] font-semibold text-sm shadow-none"
