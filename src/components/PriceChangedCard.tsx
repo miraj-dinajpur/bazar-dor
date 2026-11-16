@@ -22,7 +22,7 @@ const PriceChangedCard = ({ product, direction }: Props) => {
             : `প্রতি ${product.unit}`;
 
   return (
-    <Link href={`${process.env.NEXT_PUBLIC_API_URL}/products/${product.id}`}>
+    <Link href={`/products/${product.id}`}>
       <Card className="rounded-[20px] border border-[#dce7dd] bg-[#fcfdfc] shadow-none">
         <Card.Content className="p-5">
           {/* Product Information */}
