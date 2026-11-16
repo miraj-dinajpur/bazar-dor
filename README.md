@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 বাজার দর | BazarDor
 
-## Getting Started
+### Your Everyday Market Price Companion 🇧🇩
 
-First, run the development server:
+**BazarDor (বাজার দর)** is a web-based market price tracking platform designed to make everyday market information easily accessible. It helps users explore essential product prices in Bangladesh, compare price changes over different periods, and discover market-wise price ranges through a clean and user-friendly interface.
+
+\<p align="center">   \<a href="[https://bazar-dor-omega-seven.vercel.app/](https://bazar-dor-omega-seven.vercel.app/)">     \<strong>🌐 Live Demo\</strong>   \</a>   &nbsp; | &nbsp;   \<a href="[https://github.com/miraj-dinajpur/bazar-dor](https://github.com/miraj-dinajpur/bazar-dor)">     \<strong>📂 GitHub Repository\</strong>   \</a> \</p>
+
+---
+
+## ✨ Key Features
+
+- **📊 Daily Market Prices** – Explore the latest prices of essential products.
+- **📈 Price Comparison** – Compare current prices with yesterday, last week, and last month.
+- **📂 Category-Based Browsing** – Browse products easily through different categories.
+- **🏪 Market-Wise Price Information** – Explore minimum and maximum prices across different markets.
+- **👤 User Authentication & Profile** – Sign up, sign in, update profile information, and manage your account.
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology   | Purpose                              |
+| ------------ | ------------------------------------ |
+| Next.js      | Application framework                |
+| React        | User interface development           |
+| TypeScript   | Type-safe development                |
+| Tailwind CSS | Styling and responsive design        |
+| HeroUI       | UI components                        |
+| Better Auth  | Authentication                       |
+| REST API     | Product and category data management |
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/miraj-dinajpur/bazar-dor.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd bazar-dor
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+NEXT_PUBLIC_API_URL=https://openapi.programming-hero.com/api/bazardor
+```
+
+### 5. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔗 API
 
-## Learn More
+This project uses the Programming Hero BazarDor API for product and category data.
 
-To learn more about Next.js, take a look at the following resources:
+**API Base URL:** [https://openapi.programming-hero.com/api/bazardor](https://openapi.programming-hero.com/api/bazardor)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Project Purpose
 
-## Deploy on Vercel
+BazarDor aims to make essential market price information more accessible to consumers in Bangladesh. By presenting product prices, historical comparisons, and market-wise information in one place, the platform helps users stay informed about everyday market trends.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Project Links
+
+- **Live Website:** [https://bazar-dor-omega-seven.vercel.app/](https://bazar-dor-omega-seven.vercel.app/)
+- **GitHub Repository:** [https://github.com/miraj-dinajpur/bazar-dor](https://github.com/miraj-dinajpur/bazar-dor)
+- **API:** [https://openapi.programming-hero.com/api/bazardor](https://openapi.programming-hero.com/api/bazardor)
+
+---
+
+\<p align="center">
+&#x20; Your smarter shopping experience.
+&#x20; \<br/>
+&#x20; \<strong>বাজার দর — প্রয়োজনীয় পণ্যের দাম এক নজরে।\</strong>
+\</p>
