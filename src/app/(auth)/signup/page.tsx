@@ -31,9 +31,9 @@ const SignUpPage = () => {
 
     // Later: Better Auth signUp.email()
     const { data: resData, error } = await signUp.email({
-      email: data.email as string, // user email address
-      password: data.password as string, // user password -> min 8 characters by default
-      name: data.name as string, // user display name
+      email: data.email as string, 
+      password: data.password as string,
+      name: data.name as string, 
     });
     // console.log("Sign Up Response:", resData, error);
     if(resData?.user.name) {

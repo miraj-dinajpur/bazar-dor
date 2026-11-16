@@ -82,7 +82,7 @@ const ProfilePage = () => {
 
 
   if (!user) {
-    router.replace("/signin");
+    router.push("/signin");
     return null;
   }
 
