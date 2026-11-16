@@ -12,6 +12,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut, useSession } from "@/lib/auth-client";
 import { ICategory } from "@/types/type";
+import { CircleUserRound, SquareArrowRightExit } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -112,19 +113,28 @@ export default function Navbar() {
 
                 <Dropdown.Popover>
                   <Dropdown.Menu>
+                    <Dropdown.Item id="dataicons">
+                      <div className="text-xs text-green-950 font-semibold border rounded-xl p-2">
+                        <h2>{data.user.name}</h2>
+                        <p>{data.user.email}</p>
+                      </div>
+                    </Dropdown.Item>
+
                     <Dropdown.Item id="profile">
                       <Link href="/profile" className="w-full">
-                        প্রোফাইল
+                        <div className="flex gap-2 text-blue-900 font-semibold">
+                          <CircleUserRound />
+                          প্রোফাইল
+                        </div>
                       </Link>
                     </Dropdown.Item>
 
-                    
                     <Dropdown.Item id="signout">
-                      <button onClick={handleSignOut}>
-                        সাইন আউট
-                      </button>
+                      <div className="flex gap-2 text-red-900 font-bold">
+                        <SquareArrowRightExit />
+                        <button onClick={handleSignOut}>সাইন আউট</button>
+                      </div>
                     </Dropdown.Item>
-                   
                   </Dropdown.Menu>
                 </Dropdown.Popover>
               </Dropdown>
