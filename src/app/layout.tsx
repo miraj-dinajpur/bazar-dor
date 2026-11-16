@@ -1,3 +1,5 @@
+import dns from "node:dns";
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -32,7 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Marque />
 
         <main className="bg-[#f0f5f0]">{children}</main>
-        <Footer/>
+        <Footer />
         <Toaster />
       </body>
     </html>
