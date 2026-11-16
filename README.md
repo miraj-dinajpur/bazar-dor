@@ -4,7 +4,15 @@
 
 **BazarDor (বাজার দর)** is a web-based market price tracking platform designed to make everyday market information easily accessible. It helps users explore essential product prices in Bangladesh, compare price changes over different periods, and discover market-wise price ranges through a clean and user-friendly interface.
 
-\<p align="center">   \<a href="[https://bazar-dor-omega-seven.vercel.app/](https://bazar-dor-omega-seven.vercel.app/)">     \<strong>🌐 Live Demo\</strong>   \</a>   &nbsp; | &nbsp;   \<a href="[https://github.com/miraj-dinajpur/bazar-dor](https://github.com/miraj-dinajpur/bazar-dor)">     \<strong>📂 GitHub Repository\</strong>   \</a> \</p>
+<p align="center">
+  <a href="https://bazar-dor-omega-seven.vercel.app/">
+    <strong>🌐 Live Demo</strong>
+  </a>
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+  <a href="https://github.com/miraj-dinajpur/bazar-dor">
+    <strong>📂 GitHub Repository</strong>
+  </a>
+</p>
 
 ---
 
@@ -20,15 +28,15 @@
 
 ## 🛠️ Technologies Used
 
-| Technology   | Purpose                              |
-| ------------ | ------------------------------------ |
-| Next.js      | Application framework                |
-| React        | User interface development           |
-| TypeScript   | Type-safe development                |
-| Tailwind CSS | Styling and responsive design        |
-| HeroUI       | UI components                        |
-| Better Auth  | Authentication                       |
-| REST API     | Product and category data management |
+| Technology | Purpose |
+|---|---|
+| Next.js | Application framework |
+| React | User interface development |
+| TypeScript | Type-safe development |
+| Tailwind CSS | Styling and responsive design |
+| HeroUI | UI components |
+| Better Auth | Authentication |
+| REST API | Product and category data management |
 
 ---
 
@@ -74,9 +82,10 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🔗 API
 
-This project uses the Programming Hero BazarDor API for product and category data.
+This project uses the Programming Hero BazarDor API for product and category data management.
 
-**API Base URL:** [https://openapi.programming-hero.com/api/bazardor](https://openapi.programming-hero.com/api/bazardor)
+**API Base URL:**  
+[https://openapi.programming-hero.com/api/bazardor](https://openapi.programming-hero.com/api/bazardor)
 
 ---
 
@@ -88,14 +97,14 @@ BazarDor aims to make essential market price information more accessible to cons
 
 ## 🌐 Project Links
 
-- **Live Website:** [https://bazar-dor-omega-seven.vercel.app/](https://bazar-dor-omega-seven.vercel.app/)
-- **GitHub Repository:** [https://github.com/miraj-dinajpur/bazar-dor](https://github.com/miraj-dinajpur/bazar-dor)
-- **API:** [https://openapi.programming-hero.com/api/bazardor](https://openapi.programming-hero.com/api/bazardor)
+- **Live Website:** [BazarDor](https://bazar-dor-omega-seven.vercel.app/)
+- **GitHub Repository:** [View Source Code](https://github.com/miraj-dinajpur/bazar-dor)
+- **API:** [BazarDor API](https://openapi.programming-hero.com/api/bazardor)
 
 ---
 
-\<p align="center">
-&#x20; Your smarter shopping experience.
-&#x20; \<br/>
-&#x20; \<strong>বাজার দর — প্রয়োজনীয় পণ্যের দাম এক নজরে।\</strong>
-\</p>
+<p align="center">
+  Your smarter shopping experience.
+  <br/>
+  <strong>বাজার দর — প্রয়োজনীয় পণ্যের দাম এক নজরে।</strong>
+</p>
