@@ -37,7 +37,7 @@ export default function PriceIncreaseSection() {
 
   return (
     <section className="w-full py-12">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+      <div className="mx-auto container px-4 sm:px-6">
         {/* Section Header */}
         <div className="mb-7 flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
           <div className="flex flex-col items-start gap-2">
